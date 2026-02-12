@@ -1,0 +1,20 @@
+{
+  "projects": {},
+  "targets": {
+    "all-you-need-64b1f-616a2": {
+      "hosting": {
+        "calendar": [
+          "Hebrew-Calendar"
+        ]
+      }
+    },
+    "all-you-need-64b1f": {
+      "hosting": {
+        "calendar-site": [
+          "all-you-need-64b1f-616a2"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

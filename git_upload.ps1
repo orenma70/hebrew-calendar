@@ -1,12 +1,12 @@
 #Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-# PS C:\Users\orenm\Dropbox\my_doc\JS\hebrew-kids-game> .\git_upload.ps1
+# PS C:\Users\orenm\Dropbox\my_doc\JS\hebrew-calendar> .\git_upload.ps1
 
 # 1. הצגת סטטוס נוכחי
 git status
 
 
-$ver = "v12.5"
-$comment = "reset letters order"
+$ver = "v1.1"
+$comment = "firebase first version"
 
 "VITE_APP_VERSION=$ver" | Out-File -FilePath ".env" -Encoding ascii
  

@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "target": "calendar-site",
+    "public": "dist",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
