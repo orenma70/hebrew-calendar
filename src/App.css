@@ -1,0 +1,145 @@
+.calendar-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  direction: rtl;
+  font-family: 'Arial', sans-serif;
+  padding: 0 20px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.calendar-header h1 {
+  color: #1a73e8;
+  font-size: 2.5rem;
+}
+
+.nav-buttons button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: 1px solid #1a73e8;
+  background: white;
+  color: #1a73e8;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-buttons .today-btn {
+  background: #1a73e8;
+  color: white;
+}
+
+.calendar-wrapper {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.grid-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: #f8f9fa;
+  border-bottom: 2px solid #ddd;
+}
+
+.weekday-label {
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #555;
+  border-left: 1px solid #eee;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /* 7 Columns */
+  grid-template-rows: repeat(6, 130px);
+  /* 6 Rows of equal height */
+  background: white;
+}
+
+.day-cell {
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.2s;
+}
+
+.day-cell:hover:not(.empty) {
+  background: #f1f8ff;
+}
+
+.day-cell.empty {
+  background: #fafafa;
+}
+
+.shabbat-cell {
+  background: #fffef0;
+}
+
+.day-number {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.parsha-tag {
+  margin-top: auto;
+  font-size: 0.9rem;
+  color: #d93025;
+  background: #fde8e8;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* This part is safe and won't break the grid */
+.day-top-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.day-number {
+  font-weight: bold;
+  color: #1a73e8;
+  /* Blue for Hebrew */
+}
+
+.greg-number {
+  font-size: 0.8rem;
+  color: #888;
+  /* Small grey for English */
+}
+
+.parsha-tag {
+  font-size: 0.85rem;
+  background-color: #fef9c3;
+  border-radius: 4px;
+  padding: 2px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.today-cell {
+  background-color: #e5e7eb !important;
+  /* A nice modern Gray */
+  border: 2px solid #1a73e8 !important;
+  /* Blue border to highlight today */
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Ensure empty cells stay their own color */
+.day-cell.empty {
+  background-color: #f9fafb !important;
+}
