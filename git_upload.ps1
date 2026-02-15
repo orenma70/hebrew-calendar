@@ -5,8 +5,8 @@
 git status
 
 
-$ver = "v1.1"
-$comment = "firebase first version"
+$ver = "v1.2"
+$comment = "my code from cpp"
 
 "VITE_APP_VERSION=$ver" | Out-File -FilePath ".env" -Encoding ascii
  
